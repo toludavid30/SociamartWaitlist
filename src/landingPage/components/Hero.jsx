@@ -108,7 +108,7 @@ const Hero = () => {
     <>
     <header className="header">
         <div className="container ">
-            <a href="#" className="logo"><img src="/public/black bg v1 1.png" alt="" /></a>
+            <a href="#" className="logo"><img src="/black bg v1 1.png" alt="" /></a>
             {/* <nav>
                 <a href="#waitlist-section" className="btn btn-secondary">Join Waitlist</a>
             </nav> */}
