@@ -53,46 +53,6 @@ const Hero = () => {
         observer.observe(element);
     });
 
-    // --- Waitlist Form Submission ---
-    const waitlistForm = document.querySelector('.waitlist-form');
-    if (waitlistForm) {
-        waitlistForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const emailInput = waitlistForm.querySelector('input[type="email"]');
-            const submitButton = waitlistForm.querySelector('button[type="submit"]');
-
-            const originalButtonText = submitButton.textContent;
-            submitButton.textContent = 'Submitting...';
-            submitButton.disabled = true;
-
-            // Simulate API call for waitlist submission
-            // In a real app, you would send this email to your backend/email service (e.g., SendGrid)
-            // Example:
-            // const response = await fetch('/api/waitlist', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify({ email: emailInput.value })
-            // });
-            // const data = await response.json();
-
-            await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
-
-            // For this example, we'll just show a success message
-            // if (true /* replace with data.success in real app */) {
-            //     waitlistForm.innerHTML = `
-            //         <p className="text-success" style="font-size: 1.2rem; font-weight: 600; color: var(--color-white);">
-            //             🎉 Thanks for joining the waitlist! We'll keep you updated.
-            //         </p>
-            //     `;
-            // } else {
-            //     // Handle error
-            //     alert('There was an issue joining the waitlist. Please try again.');
-            //     submitButton.textContent = originalButtonText;
-            //     submitButton.disabled = false;
-            // }
-        });
-    }
-
     // --- Smooth Scrolling for Navigation ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -129,18 +89,17 @@ const Hero = () => {
             <p className="section-description animate-on-scroll">SociaMart empowers sellers with a vibrant ecosystem where visibility, trust, and growth all happen in one place.</p>
             <div className="problem-solution-grid">
                 <div className="card animate-on-scroll">
-                    <img src="https://via.placeholder.com/100x100?text=Problem1" alt="Problem Icon" className="card-icon"/>
+                    <img src="/O3EK8U0-removebg-preview.png" className="card-icon"/>
                     <h3>Visibility Challenges</h3>
                     <p>Struggling to get your products seen by the right audience?</p>
                 </div>
                 <div className="card animate-on-scroll">
-                    <img src="https://via.placeholder.com/100x100?text=Problem2" alt="Problem Icon" className="card-icon"/>
+                    <img src="/9824084-removebg-preview.png" alt="Problem Icon" className="card-icon"/>
                     <h3>High Logistics Costs</h3>
                     <p>Expensive shipping eating into your profits and customer satisfaction?</p>
                 </div>
                 <div className="card animate-on-scroll">
-                    <img src="" alt="" />
-                    <img src="https://via.placeholder.com/100x100?text=Problem3" alt="Problem Icon" className="card-icon"/>
+                    <img src="/6859563-removebg-preview.png" alt="Problem Icon" className="card-icon"/>
                     <h3>Lack of Trust</h3>
                     <p>Buyers hesitant due to uncertainty in online transactions?</p>
                 </div>
@@ -153,22 +112,22 @@ const Hero = () => {
             <h2 className="section-title animate-on-scroll">Sell Smarter, Faster, Together.</h2>
             <div className="features-grid">
                 <div className="feature-item animate-on-scroll">
-                    <img src="https://via.placeholder.com/80x80?text=Social" alt="Social Feed Icon" className="feature-icon"/>
+                    <img src="/3532041-removebg-preview (1).png" alt="Social Feed Icon" className="feature-icon"/>
                     <h3>In-App Social Feed</h3>
                     <p>Post short product videos, tutorials, and usage tips, just like TikTok.</p>
                 </div>
                 <div className="feature-item animate-on-scroll">
-                    <img src="https://via.placeholder.com/80x80?text=Market" alt="Marketplace Icon" className="feature-icon"/>
+                    <img src="/shop-removebg-preview.png" alt="Marketplace Icon" className="feature-icon"/>
                     <h3>Dynamic Marketplace</h3>
                     <p>List your items, connect with new buyers, and expand your reach effortlessly.</p>
                 </div>
                 <div className="feature-item animate-on-scroll">
-                    <img src="https://via.placeholder.com/80x80?text=Store" alt="Personal Store Icon" className="feature-icon"/>
+                    <img src="/illustrator_online_2-removebg-preview.png" alt="Personal Store Icon" className="feature-icon"/>
                     <h3>Personal Online Store</h3>
                     <p>Each seller gets a website-style profile page with product listings & analytics.</p>
                 </div>
                 <div className="feature-item animate-on-scroll">
-                    <img src="https://via.placeholder.com/80x80?text=Analytics" alt="Analytics Icon" className="feature-icon"/>
+                    <img src="/WhatsApp_Image_2025-10-26_at_2.08.47_PM__3_-removebg-preview.png" alt="Analytics Icon" className="feature-icon"/>
                     <h3>Smart Analytics & Inventory</h3>
                     <p>Gain insights and manage your stock with intuitive, powerful tools.</p>
                 </div>
@@ -181,12 +140,12 @@ const Hero = () => {
             <h2 className="section-title animate-on-scroll">Built on Trust, Delivered with Ease.</h2>
             <div className="trust-logistics-content">
                 <div className="card animate-on-scroll">
-                    <img src="https://via.placeholder.com/100x100?text=Escrow" alt="Escrow Icon" className="card-icon"/>
+                    <img src="/WhatsApp_Image_2025-10-26_at_2.08.47_PM__2_-removebg-preview.png" alt="Escrow Icon" className="card-icon"/>
                     <h3>Secure Escrow Payments</h3>
                     <p>Funds are only released when buyers confirm successful delivery, ensuring safe transactions.</p>
                 </div>
                 <div className="card animate-on-scroll">
-                    <img src="https://via.placeholder.com/100x100?text=Delivery" alt="Delivery Icon" className="card-icon"/>
+                    <img src="/WhatsApp_Image_2025-10-26_at_2.08.46_PM__3_-removebg-preview.png" alt="Delivery Icon" className="card-icon"/>
                     <h3>Affordable In-Area Logistics</h3>
                     <p>Our network of delivery riders makes product delivery faster and more cost-effective.</p>
                 </div>
@@ -198,7 +157,7 @@ const Hero = () => {
         <div className="container">
             <h2 className="section-title animate-on-scroll">Investing in Your Future.</h2>
             <p className="section-description animate-on-scroll">In the near future, SociaMart will introduce financing options, providing loans to help aspiring entrepreneurs start or scale their small businesses.</p>
-            <img src="https://via.placeholder.com/300x200?text=Financing+Icon" alt="Financing Icon" className="animate-on-scroll future-icon"/>
+            <img src="/payment-removebg-preview.png" alt="Financing Icon" className="animate-on-scroll future-icon"/>
         </div>
     </section>
 
@@ -206,10 +165,7 @@ const Hero = () => {
         <div className="container">
             <h2 className="section-title animate-on-scroll">Ready to scale your business?</h2>
             <p className="section-description animate-on-scroll">Join the waitlist today and be among the first to experience SociaMart's social-powered business ecosystem.</p>
-            <form className="waitlist-form animate-on-scroll">
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required/>
-                <button type="submit" className="btn btn-primary">Join the Waitlist</button>
-            </form>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLScDHDoDoBXAaJYVKW2l1XYid3BnbBQj8TPwOkbfeoZtzuOxGQ/viewform' className="btn btn-primary waitListBtn">Join the Waitlist</a>
             <p className="privacy-note animate-on-scroll">We respect your privacy. No spam, just updates.</p>
         </div>
     </section>
