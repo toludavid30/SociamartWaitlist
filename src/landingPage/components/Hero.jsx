@@ -174,9 +174,11 @@ const Hero = () => {
         <div className="container">
             <p>&copy; <span id="current-year"></span> SociaMart. All rights reserved.</p>
             <div className="social-links">
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/24x24?text=FB" alt="Facebook"/>
+                <a href="https://www.instagram.com/sociamart_?igsh=a3F5NDRydG9yZ2Fl" target="_blank">
+                <i class="bi bi-instagram"></i>
                 </a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/24x24?text=IG" alt="Instagram"/>
+                <a href="mailto:sociamart.team@gmail.com">
+                    <i class="bi bi-google"></i>
                 </a>
                 
             </div>

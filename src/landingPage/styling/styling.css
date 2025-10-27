@@ -280,8 +280,8 @@ img {
 }
 
 .feature-icon {
-    width: 100px;
-    height: 80px;
+    width: 70%;
+    height: 125px;
     margin: 0 auto var(--spacing-sm) auto;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
 }
@@ -399,14 +399,15 @@ img {
     gap: var(--spacing-sm);
 }
 
-.footer .social-links img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1); /* Makes placeholder icons white */
+.footer .social-links i {
+    width: 30px;
+    height: 30px;
+    /* filter: invert(5); */
+    color: white;
     transition: transform 0.2s ease;
 }
 
-.footer .social-links img:hover {
+.footer .social-links i:hover {
     transform: translateY(-2px);
 }
 
