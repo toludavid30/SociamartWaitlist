@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="container">
             <h1 className="hero-headline animate-on-scroll">SociaMart: Grow Your Business, Socially.</h1>
             <p className="hero-subheadline animate-on-scroll">Unlock Growth for Small Businesses: Blend Shopping, Community, Trust.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScDHDoDoBXAaJYVKW2l1XYid3BnbBQj8TPwOkbfeoZtzuOxGQ/viewform?usp=send_form" className="btn btn-primary animate-on-scroll">Join the Waitlist</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScDHDoDoBXAaJYVKW2l1XYid3BnbBQj8TPwOkbfeoZtzuOxGQ/viewform?usp=send_form" target='_blank' className="btn btn-primary animate-on-scroll">Join the Waitlist</a>
         </div>
     </section>
 
@@ -165,7 +165,7 @@ const Hero = () => {
         <div className="container">
             <h2 className="section-title animate-on-scroll">Ready to scale your business?</h2>
             <p className="section-description animate-on-scroll">Join the waitlist today and be among the first to experience SociaMart's social-powered business ecosystem.</p>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLScDHDoDoBXAaJYVKW2l1XYid3BnbBQj8TPwOkbfeoZtzuOxGQ/viewform' className="btn btn-primary waitListBtn">Join the Waitlist</a>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLScDHDoDoBXAaJYVKW2l1XYid3BnbBQj8TPwOkbfeoZtzuOxGQ/viewform' target='_blank' className="btn btn-primary waitListBtn">Join the Waitlist</a>
             <p className="privacy-note animate-on-scroll">We respect your privacy. No spam, just updates.</p>
         </div>
     </section>
